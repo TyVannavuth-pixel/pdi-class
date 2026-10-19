@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class lap1Ex1{
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num;
+        int sum=0;
+        double average;
+        System.out.print("Please, enter a number: ");
+        num = input.nextInt();
+        for(int i=1000; i>num; i--){
+            sum += i;
+        }
+        average = (double) sum / (1000 - num);
+        System.out.println("The Sum is: " + sum);
+        System.out.println("The Average is: " + average);
+        input.close();
+    }
+}
